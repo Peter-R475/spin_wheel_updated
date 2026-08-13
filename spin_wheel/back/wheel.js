@@ -219,7 +219,7 @@ function handleSpinEnd(winner) {
         wheelPool.splice(index, 1);
     }
     console.log('Winners list:', winnersList);
-    modalWinnerText.textContent = `${winner.name || 'Participant'} (${winner.nationality})`;
+    modalWinnerText.textContent = `${winner.id || 'Participant ID'} ${winner.name || 'Participant'} (${winner.nationality})`;
     winnerModal.classList.add("show");
     console.log("Pool:", wheelPool);
     processWinner(winner.nationality, 5);
